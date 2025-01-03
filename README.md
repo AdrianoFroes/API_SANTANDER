@@ -3,7 +3,7 @@ Java RESTfull API criada para BootCamp Santander
 
 ## Diagrama de Classes
 
-```mermad
+```mermaid
 classDiagram
     class User {
         +String name
@@ -36,7 +36,7 @@ classDiagram
     }
 
     User "1" --> "1" Account
-    User "1" --> "0..*" Feature
+    User "1" --> "N" Feature
     User "1" --> "1" Card
-    User "1" --> "0..*" News
+    User "1" --> "N" News
 ```
